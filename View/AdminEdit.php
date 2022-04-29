@@ -14,7 +14,7 @@ if ($conn->connect_error) {
 }
   
 // SQL query to select data from database
-$sql = "SELECT * FROM inventory ORDER BY product_ID ASC ";
+$sql = "SELECT * FROM users ORDER BY ID ASC ";
 $result = $conn->query($sql);
 $conn->close(); 
 ?>
@@ -66,14 +66,12 @@ $conn->close();
   
 <body>
     <section>
-        <h1>INVENTORY</h1>
+        <h1>Users</h1>
         <!-- TABLE CONSTRUCTION-->
         <table>
             <tr>
-                <th>product_ID</th>
-                <th>product_name</th>
-                <th>quantity</th>
-                <th>Price in Taka</th>
+                <th>ID</th>
+                <th>Name</th>
 
             </tr>
             <!-- PHP CODE TO FETCH DATA FROM ROWS-->
@@ -84,20 +82,14 @@ $conn->close();
             <tr>
                 <!--FETCHING DATA FROM EACH 
                     ROW OF EVERY COLUMN-->
-                <td><?php echo $rows['product_ID'];?></td>
-                <td><?php echo $rows['product_name'];?></td>
-                <td><?php echo $rows['quantity'];?></td>
-                <td><?php echo $rows['Price in Taka'];?></td>
+                <td><?php echo $rows['ID'];?></td>
+                <td><?php echo $rows['Name'];?></td>
             </tr>
             <?php
                 }
              ?>
         </table>
     </section>
-
-    <center><p><a href=AdminEdit.php><b>View all user</b></a></p></center>
-    <center><p><a href=add.php><b>Add Product</b></a></p></center>
-    <center><p><a href=delete.php><b>delete product</b></a></p></center>
 </body>
   
 </html>

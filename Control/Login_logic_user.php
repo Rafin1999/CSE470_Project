@@ -1,5 +1,5 @@
 <?php      
-    include('DBConnect.php');  
+    include('../Model/DBConnect.php');  
     $username = $_POST['Name'];  
     $password = $_POST['Password'];  
       
@@ -16,7 +16,7 @@
           
         if($count == 1){  
             echo "<h1><center> Login successful </center></h1>";  
-            header("Location: userpage.php");
+            header("Location: ../View/userpage.php");
         }  
         else{  
             echo "<h1> Login failed. Invalid username or password.</h1>";  

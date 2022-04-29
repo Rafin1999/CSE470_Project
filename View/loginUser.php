@@ -1,4 +1,4 @@
-<?php include('DBConnect.php') ?>
+<?php include('../Model/DBConnect.php') ?>
 <!DOCTYPE html>
 <html>
 
@@ -12,7 +12,7 @@
     <title>Login Page</title>
 </head>
 <body>
-<form action="Login_logic_user.php" method="post">
+<form action="../Control/Login_logic_user.php" method="post">
         <div class="login-box">
             <h1>User Login</h1>
   
@@ -30,7 +30,7 @@
   
             <input class="button" type="submit"
                      name="login" value="Sign In">
-                     <p>Not a user?<a href=registration.php><b>Register</b></a></p>
+                     <p>Not a user?<a href=../Control/registration.php><b>Register</b></a></p>
             
         </div>
     </form>

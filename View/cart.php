@@ -13,10 +13,11 @@
 </head>
 <body>
         <div class="login-box">
-            <h1>Welcome to ePharma</h1>
+            <h1>Make payment</h1>
   
-                     <p><a href=loginUser.php><b>Login User</b></a></p>
-                     <p><a href=LoginAdmin.php><b>Login Admin</b></a></p>                     
+                     <p><a href=loginUser.php><b>Pay with Visa Card</b></a></p>
+                     <p><a href=LoginAdmin.php><b>Pay with mastercard</b></a></p>   
+                     <p><a href=LoginAdmin.php><b>Pay with Bkash</b></a></p>                   
             
         </div>
 

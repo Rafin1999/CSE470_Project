@@ -1,6 +1,6 @@
 <?php
   
-include_once('DBConnect.php');
+include_once('../Model/DBConnect.php');
    
 function test_input($data) {
       
@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"]== "POST") {
           
         if(($user['Name'] == $adminname) && 
             ($user['Password'] == $password)) {
-                header("Location: adminpage.php");
+                header("Location: ../View/adminpage.php");
         }
         else {
             echo "<script language='javascript'>";

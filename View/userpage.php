@@ -94,7 +94,7 @@ $conn->close();
              ?>
         </table>
     </section>
-    <form action="shoping.php" method="post">
+    <form action="../Control/shoping.php" method="post">
         <div class="login-box">
   
             <input class="button" type="submit"

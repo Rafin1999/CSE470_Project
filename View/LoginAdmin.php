@@ -1,4 +1,4 @@
-<?php include('DBConnect.php') ?>
+<?php include('../Model/DBConnect.php') ?>
 <!DOCTYPE html>
 <html>
 
@@ -12,7 +12,7 @@
     <title>Login Page</title>
 </head>
 <body>
-<form action="Login_logic.php" method="post">
+<form action="../Control/Login_logic.php" method="post">
         <div class="login-box">
             <h1>Admin Login</h1>
   
